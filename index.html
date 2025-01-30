@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Legal Solutions</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet" />
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/3f051d131d.js"
+      crossorigin="anonymous"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              primary1: "#B68C5A",
+            },
+            fontFamily: {
+              inter: ["Inter", "serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-inter">
+    <header class="w-11/12 md:w-10/12 mx-auto mt-[30px] md:mt-[40px]">
+      <!-- navbar -->
+      <div class="navbar bg-base-100 justify-between">
+        <div class="navbar-start w-fit">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+          </div>
+          <a class="btn btn-ghost text-xl pl-0">
+            <img src="./images/logo2.png" alt="" class="w-full" />
+          </a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu-horizontal gap-[30px] px-1">
+            <li class="flex justify-center items-center gap-2">
+              <a class="text-[#707070] text-base font-normal">Home</a>
+            </li>
+            <li class="flex justify-center items-center gap-2">
+              <a class="text-[#707070] text-base font-normal">Services</a
+              ><i class="fa-solid fa-greater-than font-thin"></i>
+            </li>
+            <li class="flex justify-center items-center gap-2">
+              <a class="text-[#707070] text-base font-normal">Cases</a
+              ><i class="fa-solid fa-greater-than font-thin"></i>
+            </li>
+            <li class="flex justify-center items-center gap-2">
+              <a class="text-[#707070] text-base font-normal">Blog</a
+              ><i class="fa-solid fa-greater-than font-thin"></i>
+            </li>
+            <li class="flex justify-center items-center gap-2">
+              <a class="text-[#707070] text-base font-normal">Contact Us</a
+              ><i class="fa-solid fa-greater-than font-thin"></i>
+            </li>
+          </ul>
+        </div>
+        <div class="navbar-end w-fit">
+          <a
+            class="btn px-[30px] py-[18px] hidden md:block size-auto bg-primary1 text-white"
+            >Free Consultation</a
+          >
+        </div>
+      </div>
+    </header>
+    <main class="w-11/12 md:w-10/12 mx-auto"></main>
+    <foot></foot>
+  </body>
+</html>
