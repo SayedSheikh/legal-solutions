@@ -36,9 +36,10 @@
     </script>
   </head>
   <body class="font-inter">
-    <header class="w-11/12 md:w-10/12 mx-auto mt-[30px] md:mt-[40px]">
+    <header
+      class="w-11/12 md:w-10/12 mx-auto mt-[30px] md:mt-[40px] mb-[90px] md:mb-[120px]">
       <!-- navbar -->
-      <div class="navbar bg-base-100 justify-between">
+      <div class="navbar bg-base-100 justify-between mb-[40px]">
         <div class="navbar-start w-fit">
           <div class="dropdown">
             <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -88,6 +89,36 @@
             class="btn px-[30px] py-[18px] hidden md:block size-auto bg-primary1 text-white"
             >Free Consultation</a
           >
+        </div>
+      </div>
+      <!-- banner -->
+      <div
+        class="bg-[url('./images/banner.png')] min-h-[500px] bg-cover bg-no-repeat bg-center flex items-center justify-center relative z-0 rounded-xl p-[10px] md:p-0">
+        <!-- gradient -->
+        <div
+          class="z-[1] absolute w-full h-full bg-gradient-to-t from-[rgba(17,17,17,1)] to-[rgba(17,17,17,0)] rounded-xl"></div>
+        <!-- text -->
+        <div class="text-white max-w-[690px] mx-auto space-y-[24px] z-10">
+          <h1
+            class="text-center font-extrabold lg:text-6xl md:text-3xl text-2xl">
+            We Provide Effective Legal Solutions
+          </h1>
+          <p class="text-center text-[#e7e7e7] text-sm md:text-base">
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration in some form, by injected
+            humour.
+          </p>
+          <div
+            class="text-center flex md:flex-row flex-col justify-center items-center gap-[20px]">
+            <input
+              type="text"
+              placeholder="Search your service"
+              class="p-[12px] rounded-[8px] md:w-4/6 w-5/6 focus:text-gray-400 focus:outline-none" />
+            <button
+              class="btn px-[30px] py-[18px] border-none size-auto bg-primary1 text-white">
+              Search
+            </button>
+          </div>
         </div>
       </div>
     </header>
