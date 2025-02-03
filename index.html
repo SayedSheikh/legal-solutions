@@ -26,6 +26,8 @@
             colors: {
               clifford: "#da373d",
               primary1: "#B68C5A",
+              dark3: "#707070",
+              dark2: "#414040",
             },
             fontFamily: {
               inter: ["Inter", "serif"],
@@ -34,10 +36,21 @@
         },
       };
     </script>
+    <style>
+      .cards-effect {
+        background: linear-gradient(to bottom, #f3f3f3, #f3f3f300);
+      }
+      .parent:hover > .card {
+        background: white;
+      }
+      .parent .card:hover {
+        background: linear-gradient(to bottom, #f3f3f3, #f3f3f300);
+      }
+    </style>
   </head>
   <body class="font-inter">
     <header
-      class="w-11/12 md:w-10/12 mx-auto mt-[30px] md:mt-[40px] mb-[90px] md:mb-[120px]">
+      class="w-11/12 max-w-[1170px] mx-auto mt-[30px] md:mt-[40px] mb-[90px] md:mb-[120px]">
       <!-- navbar -->
       <div class="navbar bg-base-100 justify-between mb-[40px]">
         <div class="navbar-start w-fit">
@@ -61,26 +74,23 @@
             <img src="./images/logo2.png" alt="" class="w-full" />
           </a>
         </div>
-        <div class="navbar-center hidden lg:flex">
+        <div class="breadcrumbs navbar-center hidden lg:flex">
           <ul class="menu-horizontal gap-[30px] px-1">
-            <li class="flex justify-center items-center gap-2">
-              <a class="text-[#707070] text-base font-normal">Home</a>
+            <li
+              class="flex justify-center items-center flex-row-reverse text-[#707070] cursor-pointer">
+              Home
             </li>
-            <li class="flex justify-center items-center gap-2">
-              <a class="text-[#707070] text-base font-normal">Services</a
-              ><i class="fa-solid fa-greater-than font-thin"></i>
+            <li class="flex justify-center items-center flex-row-reverse">
+              <a class="text-[#707070] text-base font-normal">Services</a>
             </li>
-            <li class="flex justify-center items-center gap-2">
-              <a class="text-[#707070] text-base font-normal">Cases</a
-              ><i class="fa-solid fa-greater-than font-thin"></i>
+            <li class="flex justify-center items-center flex-row-reverse">
+              <a class="text-[#707070] text-base font-normal">Cases</a>
             </li>
-            <li class="flex justify-center items-center gap-2">
-              <a class="text-[#707070] text-base font-normal">Blog</a
-              ><i class="fa-solid fa-greater-than font-thin"></i>
+            <li class="flex justify-center items-center flex-row-reverse">
+              <a class="text-[#707070] text-base font-normal">Blog</a>
             </li>
-            <li class="flex justify-center items-center gap-2">
-              <a class="text-[#707070] text-base font-normal">Contact Us</a
-              ><i class="fa-solid fa-greater-than font-thin"></i>
+            <li class="flex justify-center items-center flex-row-reverse">
+              <a class="text-[#707070] text-base font-normal">Contact Us</a>
             </li>
           </ul>
         </div>
@@ -122,7 +132,128 @@
         </div>
       </div>
     </header>
-    <main class="w-11/12 md:w-10/12 mx-auto"></main>
+    <main class="w-11/12 max-w-[1170px] mx-auto">
+      <!-- practice area section -->
+      <div class="mb-[120px]">
+        <h2 class="text-center font-extrabold text-4xl mb-6">
+          The Legal Practice Area
+        </h2>
+        <p class="text-center font-normal text-base mb-16">
+          There are many variations of passages of Lorem Ipsum available, but
+          the majority have <br />
+          suffered alteration in some form, by injected humour.
+        </p>
+        <!-- cards container -->
+        <div class="grid grid-cols-1 md:grid-cols-3 parent">
+          <!-- card -->
+          <div
+            class="card bg-base-100 rounded-none md:border md:border-l-0 md:border-t-0">
+            <figure class="px-10 pt-10">
+              <img src="./images/business.png" alt="Shoes" class="" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title dark2">Business Law</h2>
+              <p class="text-dark3 px-14">
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteration in some form, by
+                injected humour.
+              </p>
+              <div class="card-actions">
+                <img src="./images/Frame.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <!-- card -->
+          <div
+            class="card bg-base-100 rounded-none md:border md:border-t-0 cards-effect">
+            <figure class="px-10 pt-10">
+              <img src="./images/business.png" alt="Shoes" class="" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title dark2">Business Law</h2>
+              <p class="text-dark3 px-14">
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteration in some form, by
+                injected humour.
+              </p>
+              <div class="card-actions">
+                <img src="./images/Frame.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <!-- card -->
+          <div
+            class="card bg-base-100 rounded-none md:border md:border-t-0 md:border-r-0">
+            <figure class="px-10 pt-10">
+              <img src="./images/business.png" alt="Shoes" class="" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title dark2">Business Law</h2>
+              <p class="text-dark3 px-14">
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteration in some form, by
+                injected humour.
+              </p>
+              <div class="card-actions">
+                <img src="./images/Frame.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <!-- card -->
+          <div class="card bg-base-100 rounded-none md:border md:border-l-0">
+            <figure class="px-10 pt-10">
+              <img src="./images/business.png" alt="Shoes" class="" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title dark2">Business Law</h2>
+              <p class="text-dark3 px-14">
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteration in some form, by
+                injected humour.
+              </p>
+              <div class="card-actions">
+                <img src="./images/Frame.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <!-- card -->
+          <div class="card bg-base-100 rounded-none md:border md:border-b-0">
+            <figure class="px-10 pt-10">
+              <img src="./images/business.png" alt="Shoes" class="" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title dark2">Business Law</h2>
+              <p class="text-dark3 px-14">
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteration in some form, by
+                injected humour.
+              </p>
+              <div class="card-actions">
+                <img src="./images/Frame.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <!-- card -->
+          <div
+            class="card bg-base-100 rounded-none md:border md:border-b-0 md:border-r-0">
+            <figure class="px-10 pt-10">
+              <img src="./images/business.png" alt="Shoes" class="" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title dark2">Business Law</h2>
+              <p class="text-dark3 px-14">
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteration in some form, by
+                injected humour.
+              </p>
+              <div class="card-actions">
+                <img src="./images/Frame.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
     <foot></foot>
   </body>
 </html>
